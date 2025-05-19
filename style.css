@@ -276,3 +276,14 @@ footer p strong {
     margin-top: 1rem;
     font-size: 1.1rem;
 }
+
+figure {
+    text-align: center;
+    margin: 20px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
