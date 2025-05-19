@@ -172,3 +172,31 @@ footer strong {
         font-size: 1.2rem;
     }
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+
+    .modal-content button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .close-modal {
+        font-size: 1.3rem;
+        top: 8px;
+        right: 10px;
+    }
+}
