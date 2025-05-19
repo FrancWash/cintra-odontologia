@@ -245,3 +245,26 @@ footer p strong {
     transform: scale(1.1);
     background-color: #1ebe57;
 }
+
+.formularios {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.formularios h2 {
+    font-size: 1.8rem;
+    color: #b76d6d;
+    margin-bottom: 1rem;
+}
+
+.formularios p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.formularios a.btn-whatsapp {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
