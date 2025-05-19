@@ -180,27 +180,31 @@
                 <h3>Implantes</h3>
                 <p>Implantes modernos com alta durabilidade.</p>
             </div>
-            <div class="servico">
+            <div class="servico" onclick="abrirModal('clinica')">
                 <i class="fas fa-stethoscope"></i>
                 <h3>Clínica Geral</h3>
                 <p>Cuidados completos com a saúde bucal.</p>
             </div>
-            <div class="servico">
+
+            <div class="servico" onclick="abrirModal('canal')">
                 <i class="fas fa-teeth-open"></i>
                 <h3>Tratamento de Canal</h3>
                 <p>Endodontia eficaz e segura.</p>
             </div>
-            <div class="servico">
+
+            <div class="servico" onclick="abrirModal('protese')">
                 <i class="fas fa-smile"></i>
                 <h3>Próteses Dentárias</h3>
                 <p>Reposição funcional e estética de dentes.</p>
             </div>
-            <div class="servico">
+
+            <div class="servico" onclick="abrirModal('estetica')">
                 <i class="fas fa-grin-beam"></i>
                 <h3>Estética</h3>
                 <p>Harmonização e restaurações.</p>
             </div>
-            <div class="servico">
+
+            <div class="servico" onclick="abrirModal('ortodontia')">
                 <i class="fas fa-teeth"></i>
                 <h3>Ortodontia</h3>
                 <p>Alinhamento com aparelhos.</p>
@@ -262,6 +266,72 @@
             <h3>Implantes Dentários</h3>
             <p>Substituição segura e durável de dentes ausentes com tecnologia moderna.</p>
             <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20implantes%20na%20Cintra%20Odontologia."
+                target="_blank">
+                <button>Agendar pelo WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Clínica Geral -->
+    <div id="modal-clinica" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal('clinica')">&times;</span>
+            <h3>Clínica Geral</h3>
+            <p>Atendimento completo para manter a saúde bucal em dia com consultas, limpezas e diagnósticos.</p>
+            <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20Clínica%20Geral%20na%20Cintra%20Odontologia."
+                target="_blank">
+                <button>Agendar pelo WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Tratamento de Canal -->
+    <div id="modal-canal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal('canal')">&times;</span>
+            <h3>Tratamento de Canal</h3>
+            <p>Endodontia feita com técnicas modernas, conforto e segurança para salvar seu dente.</p>
+            <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20tratamento%20de%20canal%20na%20Cintra%20Odontologia."
+                target="_blank">
+                <button>Agendar pelo WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Próteses Dentárias -->
+    <div id="modal-protese" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal('protese')">&times;</span>
+            <h3>Próteses Dentárias</h3>
+            <p>Reponha dentes perdidos com estética e funcionalidade utilizando próteses modernas.</p>
+            <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20próteses%20dentárias%20na%20Cintra%20Odontologia."
+                target="_blank">
+                <button>Agendar pelo WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Estética -->
+    <div id="modal-estetica" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal('estetica')">&times;</span>
+            <h3>Estética</h3>
+            <p>Melhore o visual do seu sorriso com técnicas de harmonização e restauração dental.</p>
+            <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20tratamento%20estético%20na%20Cintra%20Odontologia."
+                target="_blank">
+                <button>Agendar pelo WhatsApp</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Ortodontia -->
+    <div id="modal-ortodontia" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="fecharModal('ortodontia')">&times;</span>
+            <h3>Ortodontia</h3>
+            <p>Corrija o alinhamento dos seus dentes com aparelhos fixos ou estéticos sob acompanhamento profissional.
+            </p>
+            <a href="https://wa.me/5511949332507?text=Olá%2C%20tenho%20interesse%20em%20Ortodontia%20na%20Cintra%20Odontologia."
                 target="_blank">
                 <button>Agendar pelo WhatsApp</button>
             </a>
