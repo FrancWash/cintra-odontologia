@@ -32,27 +32,35 @@
 
     <section class="galeria">
         <h2>Conheça nossa estrutura</h2>
-        <div class="fotos-clinica">
-            <figure>
-                <img src="assets/imagens/entrada.jpg" alt="Fachada da Cintra Odontologia">
-                <figcaption>Fachada da Cintra Odontologia</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/imagens/recepcao.jpg" alt="Recepção da clínica">
-                <figcaption>Recepção da clínica</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/imagens/sala-atendimento.jpg" alt="Sala de atendimento">
-                <figcaption>Sala de atendimento</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/imagens/esterilizacao.jpg" alt="Sala de esterilização">
-                <figcaption>Sala de esterilização</figcaption>
-            </figure>
-            <figure>
-                <img src="assets/imagens/consultorio.jpg" alt="Consultório da Dra. Tania">
-                <figcaption>Consultório da Dra. Tania</figcaption>
-            </figure>
+        <div class="fotos-clinica-carousel">
+            <div class="carousel-track">
+                <figure>
+                    <img src="assets/imagens/entrada.jpg" alt="Entrada da Clínica">
+                    <figcaption>Entrada da Clínica</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/imagens/recepcao.jpg" alt="Recepção da Clínica">
+                    <figcaption>Recepção</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/imagens/sala-atendimento.jpg" alt="Sala de Atendimento">
+                    <figcaption>Sala de Atendimento</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/imagens/esterilizacao.jpg" alt="Sala de Esterilização">
+                    <figcaption>Sala de Esterilização</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/imagens/cadeiras.jpg" alt="Cadeiras da Recepção">
+                    <figcaption>Cadeiras da Recepção</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/imagens/consultorio.jpg" alt="Consultório da Dra. Tania">
+                    <figcaption>Consultório da Dra. Tania</figcaption>
+                </figure>
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
         </div>
     </section>
 
@@ -109,6 +117,33 @@
         <p>&copy; 2025 Cintra Odontologia | CRO-SP 61820</p>
         <p>Desenvolvido por Franc Washington Vilela</p>
     </footer>
+
+    <script>
+        const track = document.querySelector(".carousel-track");
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
+
+        let index = 0;
+
+        nextBtn.addEventListener("click", () => {
+            const figures = document.querySelectorAll(".carousel-track figure");
+            if (index < figures.length - 1) {
+                index++;
+                track.style.transform = `translateX(-${index * 270}px)`;
+            }
+        });
+
+        prevBtn.addEventListener("click", () => {
+            if (index > 0) {
+                index--;
+                track.style.transform = `translateX(-${index * 270}px)`;
+            }
+        });
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>
