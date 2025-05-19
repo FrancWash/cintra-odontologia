@@ -11,9 +11,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #b76d6d;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        header {
+            margin-top: 60px;
+        }
+    </style>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
     <a class="whatsapp"
         href="https://wa.me/5511949332507?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cintra%20Odontologia."
         target="_blank" title="Falar com a clínica no WhatsApp">
@@ -30,7 +79,7 @@
         </div>
     </header>
 
-    <section class="galeria">
+    <section id="galeria" class="galeria">
         <h2>Conheça nossa estrutura</h2>
         <div class="fotos-clinica-carousel">
             <div class="carousel-track">
@@ -60,7 +109,7 @@
         </div>
     </section>
 
-    <section class="servicos-detalhados">
+    <section id="especialidades" class="servicos-detalhados">
         <h2>Especialidades</h2>
         <div class="grid-servicos">
             <div class="servico">
@@ -101,7 +150,7 @@
         </div>
     </section>
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <h2>Agende sua consulta</h2>
         <p>Rua Vitório Tafarello, 293 - Piso superior - Osasco/SP</p>
         <p>Telefone: (11) 3608-1949 | WhatsApp: (11) 94933-2507</p>
@@ -125,21 +174,17 @@
             const figures = document.querySelectorAll(".carousel-track figure");
             if (index < figures.length - 1) {
                 index++;
-                track.style.transform = `translateX(-${index * 270}px)`;
+                track.style.transform = `translateX(-${index * (window.innerWidth <= 768 ? window.innerWidth * 0.8 + 20 : 270)}px)`;
             }
         });
 
         prevBtn.addEventListener("click", () => {
             if (index > 0) {
                 index--;
-                track.style.transform = `translateX(-${index * 270}px)`;
+                track.style.transform = `translateX(-${index * (window.innerWidth <= 768 ? window.innerWidth * 0.8 + 20 : 270)}px)`;
             }
         });
     </script>
-</body>
-
-</html>
-
 </body>
 
 </html>
