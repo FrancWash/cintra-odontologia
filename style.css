@@ -319,7 +319,7 @@ footer strong {
 
 .hero {
     position: relative;
-    background: url('assets/imagens/recepcao.jpg') center/cover fixed no-repeat;
+    background: url('assets/imagens/hero-consultorio-novo.jpg') center/cover fixed no-repeat;
     height: 70vh;
     display: flex;
     justify-content: center;
