@@ -154,8 +154,13 @@ footer strong {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 1.6rem;
+    .grid-servicos {
+        padding: 10px;
+    }
+
+    .servico {
+        width: calc(100% - 20px);
+        margin: 0 auto;
     }
 
     .cards {
@@ -170,6 +175,32 @@ footer strong {
     .carousel-btn {
         padding: 8px;
         font-size: 1.2rem;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .modal-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+
+    .modal-content button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .close-modal {
+        font-size: 1.3rem;
+        top: 8px;
+        right: 10px;
     }
 }
 
@@ -288,33 +319,53 @@ footer strong {
 
 .contato-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 20px;
-    justify-content: center;
+    justify-items: center;
     margin-bottom: 30px;
 }
 
 .contato-card {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    text-align: left;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
 }
 
 .contato-card i {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #b76d6d;
     margin-bottom: 10px;
 }
 
-.contato-card a {
+.contato-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
     color: #333;
-    text-decoration: none;
 }
 
-.contato-card a:hover {
-    text-decoration: underline;
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1da851;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -397,12 +448,15 @@ footer strong {
     aspect-ratio: 4 / 3;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.carousel-track img {
+.carousel-track figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #555;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
