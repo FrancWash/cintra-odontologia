@@ -392,3 +392,17 @@ footer strong {
 .btn-topo:hover {
     background: #a85d5d;
 }
+
+.carousel-track figure {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
