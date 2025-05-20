@@ -128,11 +128,12 @@
     </a>
 
     <header class="hero">
+        <div class="overlay"></div>
         <div class="hero-content">
-            <img src="assets/imagens/logo-cintra.png" alt="Logo Cintra Odontologia" class="logo">
+            <img src="assets/imagens/logo-cintra-novo.jpg" alt="Logo Cintra Odontologia" class="logo">
             <div class="hero-text">
                 <h1>Sorria com confiança</h1>
-                <p>na clínica que cuida de você com excelência e responsabilidade</p>
+                <p>Na clínica que cuida de você com excelência e responsabilidade.</p>
             </div>
         </div>
     </header>
@@ -146,7 +147,7 @@
                     <figcaption>Entrada da Clínica</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/imagens/recepcao.jpg" alt="Recepção da Clínica">
+                    <img src="assets/imagens/recepcao.jpg" alt="Recepção acolhedora da Cintra Odontologia em Osasco">
                     <figcaption>Recepção</figcaption>
                 </figure>
                 <figure>
@@ -228,6 +229,15 @@
                 </p>
             </div>
 
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0938334705775!2d-46.79738862551152!3d-23.529127278822006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff96b52140f9%3A0x8ab0159732226a3b!2sPure%20Pilates%20Osasco%20Km%2018%20-%20Pilates%20e%20Gympass%20em%20Osasco!5e0!3m2!1spt-BR!2sbr!4v1747770071893!5m2!1spt-BR!2sbr"
+                    width="100%" height="350"
+                    style="border:0; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
             <div class="contato-card">
                 <i class="fas fa-phone"></i>
                 <p><strong>Telefone:</strong><br>(11) 3608-1949</p>
@@ -253,6 +263,10 @@
         </a>
     </section>
 
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'});" class="btn-topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <footer>
         <p>&copy; 2025 Cintra Odontologia | CRO-SP 61820</p>
         <p>Desenvolvido por Franc Washington Vilela</p>
@@ -262,21 +276,28 @@
         const track = document.querySelector(".carousel-track");
         const prevBtn = document.querySelector(".carousel-btn.prev");
         const nextBtn = document.querySelector(".carousel-btn.next");
-
+        const figures = document.querySelectorAll(".carousel-track figure");
         let index = 0;
 
+        function updateCarousel() {
+            track.classList.add('fade');
+            setTimeout(() => {
+                track.style.transform = `translateX(-${index * (window.innerWidth <= 768 ? window.innerWidth * 0.8 + 20 : 270)}px)`;
+                track.classList.remove('fade');
+            }, 300);
+        }
+
         nextBtn.addEventListener("click", () => {
-            const figures = document.querySelectorAll(".carousel-track figure");
             if (index < figures.length - 1) {
                 index++;
-                track.style.transform = `translateX(-${index * (window.innerWidth <= 768 ? window.innerWidth * 0.8 + 20 : 270)}px)`;
+                updateCarousel();
             }
         });
 
         prevBtn.addEventListener("click", () => {
             if (index > 0) {
                 index--;
-                track.style.transform = `translateX(-${index * (window.innerWidth <= 768 ? window.innerWidth * 0.8 + 20 : 270)}px)`;
+                updateCarousel();
             }
         });
     </script>
