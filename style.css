@@ -570,3 +570,19 @@ footer strong {
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+.btn-agende {
+    background: #b76d6d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-agende:hover {
+    background: #a85d5d;
+    transform: translateY(-3px);
+}
