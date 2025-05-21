@@ -628,3 +628,14 @@ nav ul li a.active {
     color: #b76d6d;
     text-decoration: underline;
 }
+
+.social a {
+    color: #b76d6d;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #333;
+}
