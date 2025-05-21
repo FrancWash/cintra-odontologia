@@ -612,3 +612,8 @@ section.show {
     opacity: 1;
     transform: translateY(0);
 }
+
+nav ul li a.active {
+    border-bottom: 2px solid #b76d6d;
+    color: #222;
+}

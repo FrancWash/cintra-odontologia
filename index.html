@@ -472,6 +472,27 @@
 
         sections.forEach(section => observer.observe(section));
     </script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const menuLinks = document.querySelectorAll('nav ul li a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 80;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            menuLinks.forEach(a => {
+                a.classList.remove('active');
+                if (a.getAttribute('href') == '#' + current) {
+                    a.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
