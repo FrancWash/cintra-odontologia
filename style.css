@@ -515,3 +515,37 @@ footer strong {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.sobre-a-dra {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container-dra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.foto-dra {
+    width: 220px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.texto-dra h2 {
+    font-size: 1.8rem;
+    color: #b76d6d;
+    margin-bottom: 10px;
+}
+
+.texto-dra p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
