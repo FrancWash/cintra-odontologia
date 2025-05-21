@@ -709,3 +709,54 @@ footer {
         padding: 0 10px;
     }
 }
+
+/* Estilo menu hamburguer */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #b76d6d;
+    text-align: right;
+    padding-right: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    nav ul.menu-active {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        color: #333;
+        font-size: 1.1rem;
+    }
+}

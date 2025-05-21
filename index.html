@@ -120,7 +120,8 @@
 
 <body>
     <nav>
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
             <li><a href="#galeria">Galeria</a></li>
             <li><a href="#sobre-a-dra">Sobre a Dra</a></li>
             <li><a href="#sobre-clinica">Sobre a Clínica</a></li>
@@ -524,6 +525,11 @@
             "url": "https://www.cintraodontologia.com.br",
             "openingHours": "Mo-Th 10:30-19:00, Fr 09:00-15:00"
         }
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('menu-active');
+        }
+
     </script>
 </body>
 
