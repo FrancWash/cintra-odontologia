@@ -617,3 +617,14 @@ nav ul li a.active {
     border-bottom: 2px solid #b76d6d;
     color: #222;
 }
+
+.contato-card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato-card a:hover {
+    color: #b76d6d;
+    text-decoration: underline;
+}
