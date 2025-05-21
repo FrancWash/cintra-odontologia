@@ -639,3 +639,43 @@ nav ul li a.active {
 .social a:hover {
     color: #333;
 }
+
+/* 🎨 Modernização com cores suaves */
+:root {
+    --rosa-principal: #b76d6d;
+    --cinza-claro: #f4f4f4;
+    --azul-suave: #dde8f4;
+}
+
+/* Fundo alternativo para seções */
+.sobre-clinica,
+.sobre-a-dra,
+.galeria {
+    background-color: var(--cinza-claro);
+}
+
+/* Cards mais leves */
+.contato-card,
+.servico {
+    background-color: var(--azul-suave);
+}
+
+/* Títulos com destaque */
+.servicos-detalhados h2,
+.contato-section h2,
+.sobre-clinica h2,
+.texto-dra h2 {
+    color: var(--rosa-principal);
+    font-weight: bold;
+}
+
+/* Botão WhatsApp com borda leve */
+.btn-whatsapp {
+    border: 2px solid var(--cinza-claro);
+}
+
+/* Rodapé moderno */
+footer {
+    background-color: var(--cinza-claro);
+    color: #666;
+}
