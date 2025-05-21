@@ -586,3 +586,18 @@ footer strong {
     background: #a85d5d;
     transform: translateY(-3px);
 }
+
+.especializacoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    color: #b76d6d;
+}
+
+.especializacoes span {
+    background: #fff;
+    padding: 5px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
