@@ -730,3 +730,26 @@ nav ul {
         font-size: 1.1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul.menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        z-index: 999;
+    }
+
+    nav ul.menu.menu-active {
+        display: flex;
+    }
+}

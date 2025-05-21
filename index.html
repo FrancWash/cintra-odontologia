@@ -506,31 +506,43 @@
             });
         });
     </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Cintra Odontologia",
+  "image": "https://cintraodontologia.com.br/assets/imagens/logo-cintra-novo.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Vitório Tafarello, 293 – Piso superior",
+    "addressLocality": "Osasco",
+    "addressRegion": "SP",
+    "postalCode": "06192-150",
+    "addressCountry": "BR"
+  },
+  "telephone": "+551136081949",
+  "url": "https://www.cintraodontologia.com.br",
+  "openingHours": "Mo-Th 10:30-19:00, Fr 09:00-15:00"
+}
+</script>
+
     <script>
-        type = "application/ld+json" >
-        {
-            "@context": "https://schema.org",
-            "@type": "Dentist",
-            "name": "Cintra Odontologia",
-            "image": "https://cintraodontologia.com.br/assets/imagens/logo-cintra-novo.jpg",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Rua Vitório Tafarello, 293 – Piso superior",
-                "addressLocality": "Osasco",
-                "addressRegion": "SP",
-                "postalCode": "06192-150",
-                "addressCountry": "BR"
-            },
-            "telephone": "+551136081949",
-            "url": "https://www.cintraodontologia.com.br",
-            "openingHours": "Mo-Th 10:30-19:00, Fr 09:00-15:00"
-        }
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('menu-active');
         }
 
+        // Fecha o menu ao clicar em um link
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.querySelector('.menu');
+                if (menu.classList.contains('menu-active')) {
+                    menu.classList.remove('menu-active');
+                }
+            });
+        });
     </script>
+
 </body>
 
 </html>
