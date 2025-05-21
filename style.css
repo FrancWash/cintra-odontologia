@@ -38,10 +38,12 @@ body {
     text-align: center;
 }
 
-.servicos h2 {
-    font-size: 1.8rem;
+.servicos-detalhados h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #b76d6d;
+    color: #222;
 }
 
 .cards {
