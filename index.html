@@ -125,17 +125,11 @@
             (11) 94933-2507
         </a>
     </div>
-
-    <a class="whatsapp"
-        href="https://wa.me/5511949332507?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cintra%20Odontologia."
-        target="_blank" title="Falar com a clínica no WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
     <header class="header-cintra">
         <div class="container-header">
             <img src="assets/imagens/logo-cintra-new.jpg" alt="Logo Cintra Odontologia" class="logo-header">
             <nav class="nav-cintra">
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
                 <ul>
                     <li><a href="#sobre-a-dra">Sobre a Dra</a></li>
                     <li><a href="#especialidades">Especialidades</a></li>
@@ -531,14 +525,15 @@
 
     <script>
         function toggleMenu() {
-            const menu = document.querySelector('.menu');
+            // Pega o menu UL
+            const menu = document.querySelector('.nav-cintra ul');
             menu.classList.toggle('menu-active');
         }
 
         // Fecha o menu ao clicar em um link
-        document.querySelectorAll('.menu a').forEach(link => {
+        document.querySelectorAll('.nav-cintra ul a').forEach(link => {
             link.addEventListener('click', () => {
-                const menu = document.querySelector('.menu');
+                const menu = document.querySelector('.nav-cintra ul');
                 if (menu.classList.contains('menu-active')) {
                     menu.classList.remove('menu-active');
                 }
