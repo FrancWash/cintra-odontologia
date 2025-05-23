@@ -13,6 +13,12 @@ body {
     color: #333;
 }
 
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 /* TOPO WHATSAPP */
 .topo-whatsapp {
     width: 100vw;
@@ -119,7 +125,7 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 100vw;
+        width: 100%;
         padding: 0 12px;
         position: relative;
     }
@@ -149,11 +155,11 @@ body {
     .nav-cintra ul {
         display: none;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
         background: #fff;
         position: absolute;
         top: 48px;
-        left: -40px;
+        left: 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         padding-bottom: 20px;
         gap: 0;
@@ -169,7 +175,7 @@ body {
     .nav-cintra ul li {
         text-align: center;
         padding: 14px 0;
-        width: 100vw;
+        width: 100%;
     }
 }
 
@@ -708,4 +714,15 @@ footer strong {
         gap: 1.4rem;
         align-items: center;
     }
+
+    iframe,
+    #mapa,
+    .gmaps,
+    .gmaps-container {
+        width: 100% !important;
+        max-width: 100vw;
+        box-sizing: border-box;
+        display: block;
+    }
+
 }
