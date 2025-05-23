@@ -145,7 +145,7 @@ body {
         position: relative;
         border: none;
         cursor: pointer;
-        z-index: 20;
+        z-index: 101;
     }
 
     .nav-cintra {
@@ -165,7 +165,7 @@ body {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         padding-bottom: 20px;
         gap: 0;
-        z-index: 11;
+        z-index: 100;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
     }
