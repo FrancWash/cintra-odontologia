@@ -82,11 +82,14 @@ html {
     font-weight: 600;
     margin-left: 18px;
     letter-spacing: 1px;
-    white-space: nowrap;
-    max-width: 400px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal;
+    flex: 1 1 auto;
+    min-width: 180px;
+    max-width: 600px;
+    overflow-wrap: break-word;
+    text-align: left;
 }
+
 
 .menu-toggle {
     display: none;
@@ -735,6 +738,15 @@ footer strong {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 900px) {
+    .header-descricao {
+        font-size: 1rem;
+        max-width: 180px;
+        margin-left: 8px;
+    }
+}
+
 
 @media (max-width: 800px) {
 
