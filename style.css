@@ -173,6 +173,44 @@ body {
     }
 }
 
+/* BLOCO SORRISO DESTAQUE     */
+.sorriso-destaque-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #fff 50%, #f4f4f4 100%);
+    padding: 36px 0 22px 0;
+    margin-bottom: 0;
+}
+
+.sorriso-destaque-img {
+    width: 330px;
+    max-width: 92vw;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.11);
+    margin-bottom: 18px;
+}
+
+.sorriso-destaque-legenda {
+    font-size: 1.32rem;
+    color: var(--rosa-principal);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 700px) {
+    .sorriso-destaque-img {
+        width: 94vw;
+    }
+
+    .sorriso-destaque-legenda {
+        font-size: 1.05rem;
+        padding: 0 8px;
+    }
+}
+
 
 /* HERO */
 .hero {
