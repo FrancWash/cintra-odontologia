@@ -150,15 +150,18 @@ body {
 
     .menu-toggle {
         display: block;
-        font-size: 2.2rem;
-        color: var(--rosa-principal);
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 102;
-        margin-left: auto;
-        margin-right: 0;
-        /* Garante que fica colado na direita */
+
+        .header-descricao {
+            font-size: 2.2rem;
+            color: var(--rosa-principal);
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 102;
+            margin-left: auto;
+            margin-right: 0;
+            /* Garante que fica colado na direita */
+        }
     }
 
     .nav-cintra ul {
@@ -498,7 +501,7 @@ body {
 /* OUTROS */
 .btn-topo {
     position: fixed;
-    bottom: 80px;
+    bottom: 120px;
     right: 20px;
     background: #b76d6d;
     color: white;
@@ -799,7 +802,7 @@ body {
 
 .whatsapp-flutuante {
     position: fixed;
-    bottom: 28px;
+    bottom: 55px;
     right: 22px;
     background: #25d366;
     color: #fff;
@@ -819,4 +822,18 @@ body {
     background: #20ba5a;
     color: #fff;
     text-decoration: none;
+}
+
+.whatsapp-flutuante i {
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.header-descricao {
+    color: #b76d6d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 18px;
+    letter-spacing: 1px;
+    white-space: nowrap;
 }
