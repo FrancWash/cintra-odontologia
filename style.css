@@ -133,8 +133,15 @@ body {
     .logo-header {
         height: 46px;
         margin: 0;
-        flex-shrink: 0;
         /* Fica sempre à esquerda */
+    }
+
+    .nav-cintra {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
     }
 
     .menu-toggle {
@@ -144,28 +151,29 @@ body {
         background: none;
         border: none;
         cursor: pointer;
-        margin-left: auto;
         z-index: 102;
-    }
-
-    .nav-cintra {
-        flex: 1;
+        margin-left: auto;
+        margin-right: 0;
+        /* Garante que fica colado na direita */
     }
 
     .nav-cintra ul {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 48px;
-        left: 0;
         width: 100vw;
         background: #fff;
+        position: absolute;
+        top: 48px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        padding-bottom: 20px;
+        gap: 0;
+        z-index: 101;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        z-index: 101;
-        padding-bottom: 20px;
-        margin: 0;
+        text-align: center;
     }
 
     .nav-cintra ul.menu-active {
@@ -175,7 +183,7 @@ body {
     .nav-cintra ul li {
         text-align: center;
         padding: 14px 0;
-        width: 100%;
+        width: 100vw;
     }
 }
 
