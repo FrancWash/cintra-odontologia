@@ -6,17 +6,17 @@
 }
 
 /* RESET GERAL */
-body {
-    margin: 0;
+body,
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden !important;
+    box-sizing: border-box;
     font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
     color: #333;
-}
-
-html,
-body {
-    max-width: 100vw;
-    overflow-x: hidden;
 }
 
 /* TOPO WHATSAPP */
@@ -44,7 +44,7 @@ body {
     font-size: 1.25rem;
 }
 
-/* HEADER */
+/* HEADER/NAV */
 .header-cintra {
     width: 100vw;
     background: #fff;
@@ -64,8 +64,8 @@ body {
     padding: 0 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    justify-content: flex-start;
+    gap: 16px;
     position: relative;
     box-sizing: border-box;
 }
@@ -76,17 +76,32 @@ body {
     display: block;
 }
 
+.header-descricao {
+    color: #b76d6d;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 18px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .menu-toggle {
     display: none;
     font-size: 2.1rem;
     color: var(--rosa-principal);
     cursor: pointer;
     padding: 6px 10px;
-    margin-right: 10px;
+    margin-left: auto;
     user-select: none;
+    background: none;
+    border: none;
 }
 
 .nav-cintra {
+    margin-left: auto;
     position: relative;
 }
 
@@ -121,88 +136,76 @@ body {
     .logo-header {
         height: 60px;
     }
+
+    .header-descricao {
+        font-size: 1.1rem;
+        max-width: 210px;
+    }
 }
 
 @media (max-width: 800px) {
     .container-header {
         flex-wrap: wrap;
         gap: 8px;
-        padding: 0 !important;
+        padding: 0 6px !important;
         width: 100vw !important;
+        justify-content: flex-start;
     }
-}
 
-.header-descricao {
-    font-size: 0.95rem;
-    margin-left: 8px;
-    white-space: normal;
-    max-width: 48vw;
-    overflow-wrap: break-word;
-    text-align: left;
-}
-
-.logo-header {
-    height: 78px;
-    margin: 0;
-    /* Fica sempre à esquerda */
-}
-
-.nav-cintra {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-}
-
-.menu-toggle {
-    display: block;
-    margin-left: auto;
-    margin-right: 8px;
+    .logo-header {
+        height: 60px;
+        margin: 0;
+    }
 
     .header-descricao {
-        font-size: 2.2rem;
-        color: var(--rosa-principal);
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 102;
+        font-size: 0.98rem;
+        margin-left: 7px;
+        max-width: 48vw;
+        white-space: normal;
+        overflow-wrap: break-word;
+        text-align: left;
+    }
+
+    .nav-cintra {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
         margin-left: auto;
-        margin-right: 0;
-        /* Garante que fica colado na direita */
+        margin-right: 8px;
+    }
+
+    .nav-cintra ul {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        background: #fff;
+        position: absolute;
+        top: 48px;
+        right: 0;
+        left: 0;
+        margin: 0 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        padding-bottom: 20px;
+        gap: 0;
+        z-index: 9999;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+
+    .nav-cintra ul.menu-active {
+        display: flex;
+    }
+
+    .nav-cintra ul li {
+        text-align: center;
+        padding: 14px 0;
+        width: 100vw;
     }
 }
 
-.nav-cintra ul {
-    display: none;
-    flex-direction: column;
-    width: 100vw;
-    background: #fff;
-    position: absolute;
-    top: 48px;
-    right: 0;
-    left: 0;
-    margin: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    padding-bottom: 20px;
-    gap: 0;
-    z-index: 9999;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.nav-cintra ul.menu-active {
-    display: flex;
-}
-
-.nav-cintra ul li {
-    text-align: center;
-    padding: 14px 0;
-    width: 100vw;
-}
-
-
-/* BLOCO SORRISO DESTAQUE     */
+/* BLOCO SORRISO DESTAQUE */
 .sorriso-destaque-section {
     display: flex;
     flex-direction: column;
@@ -239,7 +242,6 @@ body {
         padding: 0 8px;
     }
 }
-
 
 /* HERO */
 .hero {
@@ -408,37 +410,38 @@ body {
     right: 10px;
 }
 
-/* WHATSAPP */
-.whatsapp {
+/* WHATSAPP FLUTUANTE */
+.whatsapp-flutuante {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: white;
-    font-size: 24px;
-    padding: 0.7rem 1rem;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.btn-whatsapp {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #25d366;
+    bottom: 55px;
+    right: 22px;
+    background: #25d366;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    border: 2px solid var(--cinza-claro);
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    z-index: 5000;
+    transition: background 0.2s;
+    text-decoration: none !important;
+    border: none !important;
 }
 
-.btn-whatsapp:hover {
-    background-color: #1da851;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.whatsapp-flutuante:hover {
+    background: #20ba5a;
+    color: #fff;
+}
+
+.whatsapp-flutuante i {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+    font-style: normal;
 }
 
 /* CONTATO E CARDS */
@@ -751,95 +754,4 @@ footer strong {
         box-sizing: border-box;
         display: block;
     }
-
-}
-
-/* REMOVE margens/paddings fantasmas do header/nav */
-body,
-html {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100vw;
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-
-/* Garante que header e nav ocupem toda a largura */
-.header-cintra,
-nav,
-.container-header {
-    width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    position: relative;
-    box-sizing: border-box;
-}
-
-/* Remove possíveis scrolls laterais indesejados */
-html,
-body {
-    overflow-x: hidden !important;
-}
-
-.nav-cintra ul {
-    left: 0 !important;
-    right: 0 !important;
-    width: 100vw !important;
-    margin: 0 !important;
-    border-radius: 0 0 12px 12px !important;
-    box-sizing: border-box !important;
-}
-
-.menu-toggle {
-    margin-right: 8px !important;
-    box-sizing: border-box !important;
-}
-
-.whatsapp-flutuante {
-    position: fixed;
-    bottom: 55px;
-    right: 22px;
-    background: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    width: 58px;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.2rem;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-    z-index: 5000;
-    transition: background 0.2s;
-}
-
-.whatsapp-flutuante:hover {
-    background: #20ba5a;
-    color: #fff;
-    text-decoration: none;
-}
-
-.whatsapp-flutuante i {
-    text-decoration: none !important;
-    border: none !important;
-}
-
-.whatsapp-flutuante i {
-    text-decoration: none !important;
-    border: none !important;
-    outline: none !important;
-}
-
-.header-descricao {
-    color: #b76d6d;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-left: 18px;
-    letter-spacing: 1px;
-    white-space: nowrap;
 }
