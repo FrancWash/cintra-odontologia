@@ -733,3 +733,53 @@ footer strong {
     }
 
 }
+
+/* REMOVE margens/paddings fantasmas do header/nav */
+body,
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Garante que header e nav ocupem toda a largura */
+.header-cintra,
+nav,
+.container-header {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Remove possíveis scrolls laterais indesejados */
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+/* No mobile, faz o menu ocupar toda a largura correta sem "sangrar" */
+@media (max-width: 800px) {
+    .container-header {
+        padding: 0 !important;
+        width: 100vw !important;
+    }
+
+    .nav-cintra ul {
+        left: 0 !important;
+        right: 0 !important;
+        width: 100vw !important;
+        margin: 0 !important;
+        border-radius: 0 0 12px 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    .menu-toggle {
+        margin-right: 8px !important;
+        box-sizing: border-box !important;
+    }
+}
