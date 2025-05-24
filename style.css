@@ -57,6 +57,16 @@ html {
     z-index: 1000;
 }
 
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    z-index: 2000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
 .container-header {
     max-width: 1300px;
     margin: 0 auto;
