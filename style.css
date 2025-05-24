@@ -25,10 +25,10 @@ html {
     background: var(--rosa-principal);
     text-align: center;
     padding: 8px 0 7px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2000;
+    color: #fff;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    position: static;
 }
 
 .topo-whatsapp a {
@@ -50,24 +50,33 @@ html {
     background: #fff;
     padding: 0;
     border-bottom: 1px solid var(--rosa-principal);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-    position: relative;
-    top: 43px;
-    left: 0;
-    z-index: 1000;
+    box-shadow: none;
+    position: static;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .header-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background: #fff;
-    z-index: 2000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    .header-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #fff;
+        z-index: 2000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
 
 .container-header {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 15px;
@@ -76,7 +85,7 @@ html {
     justify-content: space-between;
     box-sizing: border-box;
     height: 70px;
-    /* Fixar altura do header */
+    /* Ajuste conforme altura real do seu header */
     background: #fff;
 }
 
@@ -786,4 +795,14 @@ footer strong {
         box-sizing: border-box;
         display: block;
     }
+}
+
+.header-container,
+.header-cintra,
+.container-header,
+.topo-whatsapp {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
