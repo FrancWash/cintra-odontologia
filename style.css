@@ -53,7 +53,7 @@ html {
     border-bottom: 1px solid var(--rosa-principal);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
     position: fixed;
-    top: 43px;
+    top: 45px;
     left: 0;
     z-index: 1000;
 }
@@ -160,12 +160,6 @@ html {
 
     .nav-cintra ul.menu-active {
         display: flex;
-    }
-
-    .nav-cintra ul li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
     }
 }
 
