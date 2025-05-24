@@ -48,30 +48,30 @@ html {
 .header-cintra {
     width: 100vw;
     background: #fff;
-    padding: 0.4rem 0;
+    padding: 0;
     border-bottom: 1px solid var(--rosa-principal);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
     position: fixed;
     top: 43px;
-    /* se a barra topo-whatsapp mudar de altura, ajuste esse valor */
     left: 0;
     z-index: 1000;
 }
 
 .container-header {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    position: relative;
-    width: 100%;
+    height: 70px;
+    /* Fixar altura do header */
+    background: #fff;
 }
 
 .logo-header {
-    height: 70px;
+    height: 55px;
     width: auto;
     display: block;
 }
@@ -79,13 +79,22 @@ html {
 .header-descricao {
     flex: 1;
     color: #b76d6d;
-    font-size: 1.2rem;
+    font-size: 1.18rem;
     font-weight: 600;
     text-align: center;
     margin: 0 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    /* Remove qualquer borda/fundo se houver */
+    background: none;
+    border: none;
+    box-shadow: none;
+    height: auto;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-toggle {
