@@ -76,9 +76,11 @@ html {
     padding-top: 0 !important;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    gap: 16px;
+    width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,10 +99,12 @@ html {
 .header-descricao {
     flex: 1 1 auto;
     color: #b76d6d;
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     font-weight: 600;
     text-align: center;
-    margin: 0 20px;
+    min-width: 120px;
+    max-width: 360px;
+    margin: 0 12px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -186,13 +190,14 @@ html {
     }
 
     .header-descricao {
-        font-size: 0.92rem;
-        margin: 0 5px;
-        max-width: 100px;
-        white-space: nowrap;
+        font-size: 0.93rem;
+        margin: 0 4px;
+        max-width: 40vw;
+        white-space: normal;
+        overflow-wrap: break-word;
         overflow: hidden;
         text-overflow: ellipsis;
-        text-align: center;
+        text-align: left;
     }
 
     .nav-cintra {
