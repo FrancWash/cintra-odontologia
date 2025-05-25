@@ -59,18 +59,17 @@ html {
 }
 
 .header-container {
-    .header-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        background: #fff;
-        z-index: 2000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
+
 
 .container-header {
     margin-top: 0 !important;
