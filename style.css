@@ -102,12 +102,11 @@ html {
     font-size: 1.15rem;
     font-weight: 600;
     text-align: center;
-    min-width: 120px;
-    max-width: 360px;
-    margin: 0 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    min-width: 180px;
+    max-width: 600px;
+    margin: 0 10px;
+    white-space: normal;
+    overflow-wrap: break-word;
     /* Remove qualquer borda/fundo se houver */
     background: none;
     border: none;
@@ -172,7 +171,7 @@ html {
     .header-descricao {
         font-size: 1rem;
         margin: 0 10px;
-        max-width: 46vw;
+        max-width: 230px;
     }
 }
 
