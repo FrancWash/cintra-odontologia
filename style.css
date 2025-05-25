@@ -91,7 +91,8 @@ html {
 }
 
 .logo-header {
-    height: 55px;
+    height: 80px;
+    max-width: 220px;
     width: auto;
     display: block;
 }
@@ -165,7 +166,7 @@ html {
 /* MENU MOBILE */
 @media (max-width: 900px) {
     .logo-header {
-        height: 48px;
+        height: 60px;
     }
 
     .header-descricao {
