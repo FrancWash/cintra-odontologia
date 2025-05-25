@@ -95,7 +95,7 @@ html {
 }
 
 .header-descricao {
-    flex: 1;
+    flex: 1 1 auto;
     color: #b76d6d;
     font-size: 1.18rem;
     font-weight: 600;
@@ -186,9 +186,9 @@ html {
     }
 
     .header-descricao {
-        font-size: 0.98rem;
-        margin: 0 6px;
-        max-width: 48vw;
+        font-size: 0.92rem;
+        margin: 0 5px;
+        max-width: 100px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
