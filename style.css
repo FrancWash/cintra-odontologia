@@ -204,7 +204,7 @@ html {
     .menu-toggle {
         position: absolute;
         top: 14px;
-        right: 18px;
+        right: 12px;
         z-index: 11000;
         display: block;
         background: none;
@@ -221,13 +221,13 @@ html {
         width: 78vw;
         max-width: 320px;
         position: absolute;
-        top: 54px;
+        top: 40px;
         right: 8px;
         left: auto;
         margin: 0;
         background: #fff;
         box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-        padding: 18px 0 12px 0;
+        padding: 8px 0 8px 0;
         z-index: 9999;
         border-radius: 24px;
         gap: 0;
