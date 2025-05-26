@@ -203,17 +203,22 @@ html {
 
     .menu-toggle {
         position: absolute;
-        top: 8px;
+        top: 14px;
         right: 18px;
-        margin: 0;
-        z-index: 10001;
+        z-index: 11000;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: var(--rosa-principal);
+        cursor: pointer;
     }
 
     /* Menu mobile escondido por padrão */
     .nav-cintra ul {
         display: none !important;
         flex-direction: column;
-        width: 85vw;
+        width: 78vw;
         max-width: 320px;
         position: absolute;
         top: 54px;
