@@ -178,6 +178,7 @@ html {
 
 @media (max-width: 800px) {
     .container-header {
+        position: relative;
         flex-wrap: nowrap;
         gap: 6px;
         padding: 0 7px;
@@ -207,7 +208,11 @@ html {
     .menu-toggle {
         display: block;
         margin-left: auto;
-        margin-right: 0;
+        margin-right: 8px;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        z-index: 10000;
     }
 
     /* Menu mobile escondido por padrão */
@@ -217,13 +222,14 @@ html {
         background: #fff;
         position: absolute;
         top: 48px;
-        right: 0;
-        width: 220px;
+        right: 10px;
+        width: 80vw;
         min-width: 160px;
-        max-width: 85vw;
+        max-width: 350px;
+        left: auto;
         margin: 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        border-radius: 0 0 12px 12px;
+        border-radius: 18px;
         z-index: 9999;
         padding: 14px 0 10px 0;
         gap: 0;
