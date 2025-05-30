@@ -163,6 +163,77 @@ html {
     color: #fff;
 }
 
+.equipe-section {
+    margin: 0;
+    padding: 0;
+}
+
+.equipe-banner {
+    background: #1784a4;
+    padding: 32px 0 20px 0;
+    text-align: center;
+    border-radius: 0;
+}
+
+.equipe-banner h2 {
+    color: #fff;
+    font-size: 2.8rem;
+    margin: 0 0 8px 0;
+}
+
+.equipe-banner p {
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+}
+
+.equipe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    background: #fff;
+    padding: 32px 0;
+}
+
+.card-membro {
+    max-width: 330px;
+    text-align: center;
+    background: #f8f8f8;
+    border-radius: 16px;
+    padding: 24px 18px 14px 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 12px;
+}
+
+.card-membro img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+
+.card-membro h3 {
+    margin: 6px 0 3px 0;
+    color: #1784a4;
+    font-size: 1.28rem;
+}
+
+.card-membro .cro {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #b76d6d;
+}
+
+.card-membro p {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 0;
+}
+
 /* MENU MOBILE */
 @media (max-width: 900px) {
     .logo-header {
@@ -808,6 +879,57 @@ footer strong {
         display: block;
     }
 }
+
+@media (max-width: 900px) {
+    .equipe-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        padding: 22px 0;
+    }
+
+    .card-membro {
+        max-width: 92vw;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .equipe-banner {
+        padding: 24px 0 14px 0;
+    }
+
+    .equipe-banner h2 {
+        font-size: 2rem;
+    }
+
+    .equipe-banner p {
+        font-size: 1.1rem;
+    }
+
+    .card-membro img {
+        width: 96px;
+        height: 96px;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipe-banner h2 {
+        font-size: 1.4rem;
+    }
+
+    .equipe-banner p {
+        font-size: 1rem;
+    }
+
+    .card-membro {
+        padding: 15px 5px 8px 5px;
+    }
+
+    .card-membro img {
+        width: 74px;
+        height: 74px;
+    }
+}
+
 
 .header-container,
 .header-cintra,
