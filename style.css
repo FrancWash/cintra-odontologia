@@ -168,21 +168,24 @@ html {
     padding: 0;
 }
 
-.equipe-banner {
-    background: #1784a4;
+.equipe-banner.rose {
+    background: var(--rosa-principal);
     padding: 32px 0 20px 0;
     text-align: center;
     border-radius: 0;
 }
 
-.equipe-banner h2 {
+.equipe-banner.rose h2,
+.equipe-banner.rose p {
     color: #fff;
+}
+
+.equipe-banner.rose h2 {
     font-size: 2.8rem;
     margin: 0 0 8px 0;
 }
 
-.equipe-banner p {
-    color: #fff;
+.equipe-banner.rose p {
     font-size: 1.4rem;
     font-style: italic;
     font-weight: 500;
@@ -212,13 +215,19 @@ html {
     width: 110px;
     height: 110px;
     object-fit: cover;
+    object-position: top center;
     border-radius: 50%;
     margin-bottom: 12px;
+    background: #fff;
+}
+
+.img-equipe-renata {
+    object-position: center top !important;
 }
 
 .card-membro h3 {
     margin: 6px 0 3px 0;
-    color: #1784a4;
+    color: var(--rosa-principal);
     font-size: 1.28rem;
 }
 
@@ -893,15 +902,15 @@ footer strong {
         padding: 20px 10px 10px 10px;
     }
 
-    .equipe-banner {
+    .equipe-banner.rose {
         padding: 24px 0 14px 0;
     }
 
-    .equipe-banner h2 {
+    .equipe-banner.rose h2 {
         font-size: 2rem;
     }
 
-    .equipe-banner p {
+    .equipe-banner.rose p {
         font-size: 1.1rem;
     }
 
@@ -912,11 +921,11 @@ footer strong {
 }
 
 @media (max-width: 600px) {
-    .equipe-banner h2 {
+    .equipe-banner.rose h2 {
         font-size: 1.4rem;
     }
 
-    .equipe-banner p {
+    .equipe-banner.rose p {
         font-size: 1rem;
     }
 
